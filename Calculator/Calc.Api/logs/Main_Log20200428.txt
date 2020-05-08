@@ -1,0 +1,36 @@
+2020-04-28 11:59:07.107 +03:00 [INF] Done
+2020-04-28 12:43:14.206 +03:00 [INF] Done
+2020-04-28 12:43:40.829 +03:00 [INF] Done
+2020-04-28 13:05:38.596 +03:00 [INF] Done
+2020-04-28 13:30:36.339 +03:00 [INF] Done
+2020-04-28 13:30:58.888 +03:00 [INF] Done
+2020-04-28 13:31:04.047 +03:00 [INF] Done
+2020-04-28 13:31:17.351 +03:00 [INF] Done
+2020-04-28 22:55:14.196 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: 'Invoke' or 'InvokeAsync' does not return an object of type 'Task'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2020-04-28 22:56:32.444 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: 'Invoke' or 'InvokeAsync' does not return an object of type 'Task'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2020-04-28 23:17:23.469 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: 'Invoke' or 'InvokeAsync' does not return an object of type 'Task'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2020-04-28 23:20:44.719 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: 'Invoke' or 'InvokeAsync' does not return an object of type 'Task'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2020-04-28 23:22:36.217 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'Calc.Api.Middleware.CommonMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2020-04-28 23:23:38.844 +03:00 [INF] Done
+2020-04-28 23:24:52.829 +03:00 [INF] Done
+2020-04-28 23:24:58.296 +03:00 [INF] Done

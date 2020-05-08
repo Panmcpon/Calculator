@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calc.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Calc.Api.Controllers.CalcController">
+            <summary>
+            The main Controller class.
+            Contains method ControllerOperation.
+            </summary>
+        </member>
+        <member name="M:Calc.Api.Controllers.CalcController.ControllerOperation(Calc.Command.Models.RequiredCalcModel)">
+            <summary>
+            This controller resives data from FromBody.
+            Uses method Operations from CalcService which works with math operators: +, -, *, /.
+            </summary>
+            <returns>
+            Result and StatusCode.
+            </returns>
+            <response code="200">
+            Returns the message "Done".
+            </response>
+        </member>
+        <member name="T:Calc.Api.Middleware.CommonMiddleware">
+            <summary>
+            The CommonMiddleware create token exist.
+            </summary>
+        </member>
+        <member name="F:Calc.Api.Middleware.CommonMiddleware.token">
+            <summary>
+            Apparently create a token.
+            </summary>
+        </member>
+        <member name="M:Calc.Api.Middleware.CommonMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            The CommonMiddleware initializes the delegate.
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:Calc.Api.Middleware.CommonMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Containes token or return StatusCode: 400, if token not valid.
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Calc.Api.Util.ServiceResolver">
+            <summary>
+            The ServiceResolver helps to registration WindsorContainer.
+            </summary>
+        </member>
+        <member name="M:Calc.Api.Util.ServiceResolver.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            The constructor ServiceResolver registarted components for WindsorContainer.
+            Add and configure Json.
+            Configure logging.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Calc.Api.Util.ServiceResolver.GetServiceProvider">
+            <summary>
+            The IServiceProvider ini obj ser provider uses interface.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

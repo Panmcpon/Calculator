@@ -1,0 +1,83 @@
+2020-04-29 10:12:13.649 +03:00 [INF] Done
+2020-04-29 10:20:05.197 +03:00 [INF] Done
+2020-04-29 10:21:03.305 +03:00 [INF] Done
+2020-04-29 10:40:31.928 +03:00 [INF] Done
+2020-04-29 10:42:01.008 +03:00 [INF] Done
+2020-04-29 10:42:24.255 +03:00 [INF] Done
+2020-04-29 11:39:55.178 +03:00 [INF] Done
+2020-04-29 11:40:10.860 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Calc.Command.Exceptions.DevideByZeroExeption: Try to devide by 0
+   at Calc.Command.Services.CalcService.Operations(RequiredCalcModel requiredCalcModel) in C:\Users\Oleksandr 7\source\repos\Calculator\Calc.Command\Services\CalcService.cs:line 37
+   at Calc.Api.Controllers.CalcController.ControllerOperation(RequiredCalcModel requiredCalcModel) in C:\Users\Oleksandr 7\source\repos\Calculator\Calc.Api\Controllers\CalcController.cs:line 46
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-04-29 11:40:25.384 +03:00 [INF] Done
+2020-04-29 11:40:29.644 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Calc.Command.Exceptions.NotValidOperatorExeption: Not valid operation =
+   at Calc.Command.Services.CalcService.Operations(RequiredCalcModel requiredCalcModel) in C:\Users\Oleksandr 7\source\repos\Calculator\Calc.Command\Services\CalcService.cs:line 44
+   at Calc.Api.Controllers.CalcController.ControllerOperation(RequiredCalcModel requiredCalcModel) in C:\Users\Oleksandr 7\source\repos\Calculator\Calc.Api\Controllers\CalcController.cs:line 46
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-04-29 11:43:29.170 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: 'Invoke' or 'InvokeAsync' does not return an object of type 'Task'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2020-04-29 11:55:30.664 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: 'Invoke' or 'InvokeAsync' does not return an object of type 'Task'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2020-04-29 11:56:40.936 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: 'Invoke' or 'InvokeAsync' does not return an object of type 'Task'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2020-04-29 11:57:05.111 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: 'Invoke' or 'InvokeAsync' does not return an object of type 'Task'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2020-04-29 11:57:15.814 +03:00 [FTL] Application startup exception
+System.InvalidOperationException: 'Invoke' or 'InvokeAsync' does not return an object of type 'Task'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2020-04-29 12:02:55.417 +03:00 [INF] Done
+2020-04-29 12:03:58.548 +03:00 [INF] Done
+2020-04-29 12:56:43.556 +03:00 [INF] Done
+2020-04-29 12:58:03.527 +03:00 [INF] Done
+2020-04-29 17:16:58.560 +03:00 [INF] Done
+2020-04-29 17:17:26.790 +03:00 [INF] Done
+2020-04-29 20:36:37.015 +03:00 [INF] Done
+2020-04-29 20:37:42.025 +03:00 [INF] Done
